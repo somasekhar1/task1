@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table align="center" border="1">
+    <tr>
+        <td>Manager name</td>
+        <td>username</td>
+        <td>password</td>
+        <td>location</td>
+        {% for x in icici %}
+            <tr>
+            <td>{{ x.manager_name }}</td>
+            <td>{{ x.username }}</td>
+            <td>{{ x.password }}</td>
+            <td>{{ x.location }}</td>
+            </tr>
+        {% endfor %}
+    </tr>
+</table>
+</body>
+</html>
